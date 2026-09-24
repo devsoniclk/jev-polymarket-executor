@@ -1,0 +1,38 @@
+# Jev Polymarket Executor Configuration
+
+# API Keys (override in .env)
+openrouter_api_key: ""
+polymarket_api_key: ""
+polymarket_api_secret: ""
+polymarket_passphrase: ""
+
+# Trading mode
+paper_mode: true
+
+# Edge and sizing
+min_edge: 0.08          # Minimum edge to trade (8%)
+kelly_fraction: 0.25    # Fractional Kelly (quarter Kelly)
+
+# Risk limits
+max_per_trade: 10.0     # Max $10 per trade
+max_exposure: 100.0     # Max $100 total exposure
+daily_loss_limit: 50.0  # Max $50 daily loss
+circuit_breaker_losses: 3  # Stop after 3 consecutive losses
+expiry_buffer_seconds: 75  # Skip last 75 seconds
+
+# Market filters
+min_volume: 1000        # Min $1K volume
+min_liquidity: 500      # Min $500 liquidity
+
+# Paper trading
+paper_balance: 100.0    # Starting paper balance
+
+# Signal weights
+signal_weights:
+  polymarket: 0.45
+  news_sentiment: 0.30
+  crypto_decisions: 0.25
+
+# Order management
+cancel_interval_seconds: 17
+cancel_max_age_seconds: 18
