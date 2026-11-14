@@ -2,6 +2,25 @@
 
 Polymarket trading executor powered by Jev decision engine. Aggregates signals from multiple sources, evaluates markets for mispricing, and executes maker-only orders on Polymarket CLOB.
 
+
+## 🎯 CLOB Execution Flow
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Signal as Jev Polymarket Signal
+    participant Executor as Polymarket Executor Engine
+    participant Wallet as Polygon Signer (USDC / Proxy Wallet)
+    participant CLOB as Polymarket CLOB Matcher
+
+    Signal->>Executor: Dispatched Target Order (Token ID, Price, Size)
+    Executor->>Wallet: Sign EIP-712 Order Message
+    Wallet->>CLOB: Submit Signed Limit / Market Order
+    CLOB-->>Executor: Fill Telemetry & Position Update
+```
+
+---
+
 ## Architecture
 
 ```
