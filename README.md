@@ -1,5 +1,10 @@
 # Jev Polymarket Executor
 
+[![Follow on GitHub](https://img.shields.io/github/followers/devsoniclk?label=Follow%20%40devsoniclk&style=social)](https://github.com/devsoniclk)
+[![Star on GitHub](https://img.shields.io/github/stars/devsoniclk/jev-polymarket-executor?style=social)](https://github.com/devsoniclk/jev-polymarket-executor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 Polymarket trading executor powered by Jev decision engine. Aggregates signals from multiple sources, evaluates markets for mispricing, and executes maker-only orders on Polymarket CLOB.
 
 
@@ -131,3 +136,10 @@ Reads from sibling projects:
 - **5m/15m Up/Down**: Short-term price direction markets
 - **Political**: Election and policy outcome markets
 - **Crypto**: General crypto market events
+
+---
+
+### 🌟 Part of the Sovereign Agent Fleet
+Engineered by **[Lakshitha Dananjaya](https://github.com/devsoniclk)** (`@devsoniclk`) | [X / Twitter](https://x.com/BeingDananjaye) | [dlxconsult.com](https://dlxconsult.com)
+
+⭐ **Star this repository** to bookmark it and follow [@devsoniclk](https://github.com/devsoniclk) for production-grade agent security and quant trading tools.
